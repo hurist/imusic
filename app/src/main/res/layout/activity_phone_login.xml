@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="手机号登录"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="30dp"
+        android:text="未注册手机号登录后将自动创建账号"/>
+
+    <TextView
+        android:id="@+id/cityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tips"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="+86"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/cityCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cityCode"
+        app:layout_constraintBottom_toBottomOf="@id/cityCode"
+        android:layout_marginEnd="@dimen/base_margin"
+        app:layout_constraintBaseline_toBaselineOf="@id/cityCode"
+        style="@style/EditText"
+        android:hint="请输入手机号"/>
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/icon_clear"
+        app:layout_constraintEnd_toEndOf="@id/input"
+        app:layout_constraintTop_toTopOf="@id/cityCode"
+        app:layout_constraintBottom_toBottomOf="@id/cityCode"
+        android:baselineAlignBottom="true"
+        android:layout_marginEnd="4dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginEnd="@dimen/base_margin"
+        app:cornerRadius="@dimen/button_cornerRadius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cityCode"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="下一步"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

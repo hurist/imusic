@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">imusic</string>
+    <string name="title_activity_phone_login">PhoneLoginActivity</string>
 </resources>
