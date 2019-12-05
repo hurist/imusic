@@ -1,8 +1,6 @@
-package com.hurist.imusic.viewmodel
+package com.hurist.imusic.mvvm.viewmodel
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 
 class PhoneLoginViewModel : ViewModel(){

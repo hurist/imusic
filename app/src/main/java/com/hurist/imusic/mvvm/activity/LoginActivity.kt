@@ -1,11 +1,11 @@
-package com.hurist.imusic
+package com.hurist.imusic.mvvm.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
+import com.hurist.imusic.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_phone_login.*
 

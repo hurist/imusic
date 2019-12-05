@@ -12,14 +12,14 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".PhoneLoginActivity"
+            android:name=".mvvm.activity.PhoneLoginActivity"
             android:label="@string/title_activity_phone_login"
-            android:parentActivityName=".LoginActivity"
+            android:parentActivityName=".mvvm.activity.LoginActivity"
             android:theme="@style/AppTheme.White.NoActionBar">
         </activity>
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name=".mvvm.activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
