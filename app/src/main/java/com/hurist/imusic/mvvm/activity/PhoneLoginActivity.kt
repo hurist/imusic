@@ -1,6 +1,8 @@
 package com.hurist.imusic.mvvm.activity
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -26,6 +28,21 @@ class PhoneLoginActivity : AppCompatActivity() {
 
         button.setOnClickListener {
         }
+
+        clear.setOnClickListener {
+            input.setText("")
+        }
+
+        input.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+        })
     }
 
 }
